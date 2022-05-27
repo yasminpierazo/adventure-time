@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/backgrounds/background-jujuba.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    margin: 75px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1 {
+    color: #141417;
+    text-align: center;
+    font-size: 80px;
+    font-family: "OffLimits";
+    text-shadow: 4px 4px 0 #ff5013;
+}
+
+article {
+    
+    width: 100%;
+    color: #141417;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "img txt";
+
+    margin: 50px 0;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+p > a{
+    color: #674dd1;
+}
+
+.txt{
+    background-color: white;
+    border: 1px solid #4e46ff;
+    grid-area: txt;
+    font-family: monospace;
+    font-size: 20px;
+    color: #141417;
+    border-radius: 10px;
+    filter: drop-shadow( 8px 5px 0 #4e46ff);
+}
+
+.txt > p{
+    padding: 10px;
+}
+
+.img-container {
+    width: auto;
+    position: relative;
+    grid-area: img;
+    perspective: 96px;
+}
+
+.img-container  > img {
+    filter: drop-shadow(6px 4px 0px #4e46ff );
+}
+ 
+
+.img-container> span {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+    z-index: 1;
+    transform: rotate(5deg);
+}
+
+.txtHead {
+    padding-left: 20px;
+    color: white;
+    font-size: 16px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    font-family:  monospace;
+    grid-area: txtHead;
+    padding: 10px 0 10px 10px;
+    background-color: #4e46ff;
+}

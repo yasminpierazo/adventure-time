@@ -1,0 +1,77 @@
+body{
+    background-image: url("../images/backgrounds/background-chars.svg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 0 10% 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+h1 {
+    margin: 75px 0 0 0;
+    color: #141417;
+    text-align: center;
+    font-size: 80px;
+    font-family: "OffLimits";
+    text-shadow: 4px 4px 0 #ffffff;
+}
+
+
+#chars-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    margin-top: 75px;
+    row-gap: 60px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#chars-grid > .char > a > img{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#chars-grid > figure:hover > a > img {
+    transform: scale(1.1);
+    filter: drop-shadow( 4px 0px 0 #141417);
+}
+
+#chars-grid > figure:hover > a{
+    position: relative;
+    top: 10px;
+    font-weight: bolder;
+    filter: drop-shadow(4px 2px 0 #141417);
+}
+
+label{
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 3px;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+a{
+    text-decoration: none;
+    color: #141417;
+}
+
+
+.char {
+    display: block; 
+    width:min-content; 
+    text-align:center;
+    margin: 0;
+}

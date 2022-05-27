@@ -1,0 +1,55 @@
+#navbar{
+    top: 0px;
+    position: sticky;
+    background-image: url('../components/fundo-navbar.svg');
+    background-size: 95% 85%;
+    z-index: 13;
+    background-position: center -20px;
+    background-repeat: no-repeat; 
+    filter: drop-shadow( 6px 3px 0 #000000);
+}
+#navbar  * {
+    font-family: monospace;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    font-variation-settings: 'wght' 600;
+    list-style: none;
+    text-decoration: none;
+}
+
+#navbar > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+#navbar > ul > li > a:hover {
+    color: rgb(83, 83, 83);
+}
+
+ul li>ul {
+    background-color:white;
+    position: absolute;
+    padding: 5px;
+    border: solid 1px #000000;
+    display: none;
+    z-index: 1;
+}
+
+ul li>ul>li {
+    padding: 2px 2px;
+    vertical-align: middle;
+}
+ul li >ul>a:hover > li {
+    background-color: rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+}
+
+ul li:hover>ul,
+ul li > ul:hover {
+    display: block;
+}
